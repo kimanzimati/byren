@@ -1,3 +1,4 @@
+<!---for sale show--->
 @extends('layouts.app')
 
 @section('content')

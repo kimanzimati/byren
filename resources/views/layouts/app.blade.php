@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'BuySell') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -24,7 +24,7 @@
     <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="/">BuySell</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,11 +34,33 @@
             <a class="nav-link" href="/">Home
             </a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/">For Rent
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/">For Sale
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Contact Us
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Favorite
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Sign up
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/login">Login
+            </a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="/cart">Cart
-            @if (Cart::instance('default')->0)
-            <span class="badge badge-light">
-                {{ Cart::instance('default')->count() }}
+
             </span>
             </a>
           </li>

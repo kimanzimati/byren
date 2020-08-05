@@ -22,8 +22,28 @@ Route::post('/cart', 'CartController@store');
 Route::delete('/cart/{id}', 'CartController@destroy');
 Route::post('/cart/saveForLater', 'CartController@saveForLater');
 
+
+Route::get('login', 'AuthController@index');
+Route::post('post-login', 'AuthController@postLogin');
+Route::get('registration', 'AuthController@registration');
+Route::post('post-registration', 'AuthController@postRegistration');
+Route::get('dashboard', 'AuthController@dashboard');
+Route::get('logout', 'AuthController@logout');
+
+
+//render in view contact us
+Route::get('/contact', [
+    'uses' => 'ContactUsFormController@createForm'
+]);
+
+//post form data
+Route::post('/contact', [
+    'uses'=> 'ContactUsFormController@ContactUsForm',
+    'as' => 'contact.store'
+]);
+/*
 Route::get('/cart/empty', function () {
     Cart::destroy();
 });
-
+*/
 Auth::routes();
