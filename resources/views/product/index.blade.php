@@ -5,9 +5,11 @@
 
     <h1 class="my-4">BuySell</h1>
     <div class="list-group">
-      <a href="/" class="list-group-item">Home</a>
-      <a href="#" class="list-group-item">For Sale</a>
-      <a href="#" class="list-group-item">For Rent</a>
+        <div class="list-group">
+            <a href="/" class="list-group-item">Home</a>
+            <a href="/product" class="list-group-item">For Rent</a>
+            <a href="/product" class="list-group-item">For Sale</a>
+        </div>
     </div>
 
   </div>
@@ -17,7 +19,7 @@
 
    <div class="row">
 
-    @foreach ($products as $product)
+    @foreach ($product as $product)
 
 
 

@@ -6,8 +6,8 @@
     <h1 class="my-4">BYARENT</h1>
     <div class="list-group">
       <a href="/" class="list-group-item">Home</a>
-      <a href="#" class="list-group-item">For Rent</a>
-      <a href="#" class="list-group-item">For Sale</a>
+      <a href="/product" class="list-group-item">For Rent</a>
+      <a href="/product" class="list-group-item">For Sale</a>
     </div>
 
   </div>
@@ -21,17 +21,15 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
+
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
+            <img class="d-block img-fluid" src="http://lorempixel.com/640/360" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
+            <img class="d-block img-fluid" src="https://picsum.photos/640/360" alt="Second slide">
           </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
-          </div>
-        </div>
+         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>

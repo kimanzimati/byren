@@ -16,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','HomeController@index');
 Route::get('/product','ProductController@index');
 Route::get('/product/{slug}', 'ProductController@show');
+Route::post('/product', 'ProductController@store');
+Route::get('/product/create', 'ProductController@create');
+Route::get('/product/{id}', 'ProductController@show');
+Route::get('/product/{id}/edit', 'ProductController@edit');
+Route::put('/product/{id}', 'ProductController@update');
+Route::delete('/product/{id}', 'ProductController@destroy');
 
 Route::get('/cart', 'CartController@index');
 Route::post('/cart', 'CartController@store');
@@ -31,6 +37,9 @@ Route::get('dashboard', 'AuthController@dashboard');
 Route::get('logout', 'AuthController@logout');
 
 
+Route::get('/forsale','ForSaleController@index');
+Route::get('/forsale/{slug}', 'ForSaleController@show');
+
 //render in view contact us
 Route::get('/contact', [
     'uses' => 'ContactUsFormController@createForm'
@@ -41,23 +50,10 @@ Route::post('/contact', [
     'uses'=> 'ContactUsFormController@ContactUsForm',
     'as' => 'contact.store'
 ]);
-
+//create model for the cart-missing
 Route::get('/cart/empty', function () {
     Cart::destroy();
 });
 
-Route::get('/product', 'AddProductController@index');
-
-Route::post('/product', 'AddProductController@store');
-
-Route::get('/product/create', 'AddProductController@create');
-
-Route::get('/product/{id}', 'AppProductController@show');
-
-Route::get('/product/{id}/edit', 'AddProductController@edit');
-
-Route::put('/product/{id}', 'AddProductController@update');
-
-Route::delete('/product/{id}', 'AddProductController@destroy');
 
 Auth::routes();

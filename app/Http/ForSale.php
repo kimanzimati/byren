@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class AddProduct extends Model
+class ForSale extends Model
 {
     protected $guarded = [];
 

@@ -33,8 +33,6 @@
                   @if ($errors->has('name'))
                   <span class="error">{{ $errors->first('name') }}</span>
                   @endif
-
-                </div>
                 <div class="form-label-group">
                   <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" >
                   <label for="inputEmail">Email address</label>

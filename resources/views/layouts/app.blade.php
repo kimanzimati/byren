@@ -35,23 +35,15 @@
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="/">For Rent
+            <a class="nav-link" href="/product">For Rent
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="/">For Sale
+            <a class="nav-link" href="/product">For Sale
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="/">Contact Us
-            </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Favorite
-            </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Sign up
+            <a class="nav-link" href="/register">Sign up
             </a>
           </li>
           <li class="nav-item active">
