@@ -41,9 +41,23 @@ Route::post('/contact', [
     'uses'=> 'ContactUsFormController@ContactUsForm',
     'as' => 'contact.store'
 ]);
-/*
+
 Route::get('/cart/empty', function () {
     Cart::destroy();
 });
-*/
+
+Route::get('/product', 'AddProductController@index');
+
+Route::post('/product', 'AddProductController@store');
+
+Route::get('/product/create', 'AddProductController@create');
+
+Route::get('/product/{id}', 'AppProductController@show');
+
+Route::get('/product/{id}/edit', 'AddProductController@edit');
+
+Route::put('/product/{id}', 'AddProductController@update');
+
+Route::delete('/product/{id}', 'AddProductController@destroy');
+
 Auth::routes();

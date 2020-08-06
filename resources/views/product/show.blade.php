@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-section('content')
+@section('content')
 
 <div class="col-lg-3">
 
